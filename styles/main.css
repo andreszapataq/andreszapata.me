@@ -6,6 +6,7 @@
 
 body {
   font-family: 'DM Serif Display', serif;
+  overflow: hidden;
 }
 
 .grid-container {
