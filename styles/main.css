@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main {
@@ -38,4 +38,11 @@ main {
 a {
   color: black;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .grid-container {
+    min-height: -webkit-fill-available;
+  }
 }
