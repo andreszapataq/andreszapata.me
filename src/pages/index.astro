@@ -1,4 +1,6 @@
 ---
+import '@fontsource-variable/urbanist';
+import AZLogo from '/az-logo.svg'
 ---
 
 <html lang="en">
@@ -7,9 +9,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>andreszapata.me</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="p-12">
+		<div class="flex justify-between">
+			<div>
+				<img src={AZLogo} alt="{az}" class="w-[220px]" />
+			</div>
+			<div>
+				<h1 class="text-[50px] font-medium">Hi there!</h1>
+				<p class="text-xl font-light pb-4">
+					I like your <span class="font-semibold">ideas</span>, let's work on them together. I really enjoy designing,<br>
+					developing software and bringing interesting projects to life.<br>
+					These are some of my skills and portfolio, I hope you like it.
+				</p>
+				<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact me</button>
+			</div>
+		</div>
 	</body>
 </html>
