@@ -1,0 +1,29 @@
+---
+import Figma from "./Icon/Figma.astro"
+import FigmaColor from "./Icon/FigmaColor.astro"
+import TailwindColor from "./Icon/TailwindColor.astro"
+import AstroColor from "./Icon/AstroColor.astro"
+import MongoDBColor from "./Icon/MongoDBColor.astro"
+import AWSColor from "./Icon/AWSColor.astro"
+import GitColor from "./Icon/GitColor.astro"
+import JavascriptColor from "./Icon/JavascriptColor.astro"
+import ReactColor from "./Icon/ReactColor.astro"
+import NodeColor from "./Icon/NodeColor.astro"
+
+const iconMap = {
+    figma: Figma,
+    figmaColor: FigmaColor,
+    tailwindColor: TailwindColor,
+    astroColor: AstroColor,
+    mongodbColor: MongoDBColor,
+    awsColor: AWSColor,
+    gitColor: GitColor,
+    javascriptColor: JavascriptColor,
+    reactColor: ReactColor,
+    nodeColor: NodeColor,
+}
+
+const IconComponent = iconMap[Astro.props.name]
+---
+
+<IconComponent />
