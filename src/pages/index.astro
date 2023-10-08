@@ -12,68 +12,107 @@ import Icon from "../components/Icon.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>andreszapata.me</title>
 	</head>
-	<body class="p-12">
-		<div class="flex justify-between mb-28">
-			<div>
-				<img src={AZLogo} alt="{az}" class="w-[220px]" />
+	<body>
+		<div class="main p-12">
+			<div class="section-one flex justify-between mb-28">
+				<div>
+					<img src={AZLogo} alt="{az}" class="w-[220px]" />
+				</div>
+				<div>
+					<h1 class="text-[50px] font-medium">Hi there!</h1>
+					<p class="text-xl font-light pb-4">
+						I like the new <span class="font-semibold">ideas</span>, let's work on them together. I really enjoy designing,<br>
+						developing software and bringing interesting projects to life.<br>
+						These are some of my skills and portfolio, I hope you like it.
+					</p>
+					<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact me</button>
+				</div>
 			</div>
-			<div>
-				<h1 class="text-[50px] font-medium">Hi there!</h1>
-				<p class="text-xl font-light pb-4">
-					I like the new <span class="font-semibold">ideas</span>, let's work on them together. I really enjoy designing,<br>
-					developing software and bringing interesting projects to life.<br>
-					These are some of my skills and portfolio, I hope you like it.
-				</p>
-				<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact me</button>
+			<div class="section-two mb-28">
+				<h2 class="text-4xl text-navy-blue font-semibold pb-8">Skills</h2>
+				<div class="w-6/12 grid grid-cols-3 gap-x-6 gap-y-10">
+					<div class="flex">
+						<Icon name="figmaColor" />
+						<p class="font-semibold text-lg ml-4">UX/UI</p>
+					</div>
+					<div class="flex">
+						<Icon name="astroColor" />
+						<p class="font-semibold text-lg ml-4">Astro</p>
+					</div>
+					<div class="flex">
+						<Icon name="tailwindColor" />
+						<p class="font-semibold text-lg ml-4">Tailwind CSS</p>
+					</div>
+					<div class="flex">
+						<Icon name="mongodbColor" />
+						<p class="font-semibold text-lg ml-4">MongoDB</p>
+					</div>
+					<div class="flex">
+						<Icon name="awsColor" />
+						<p class="font-semibold text-lg ml-4">AWS</p>
+					</div>
+					<div class="flex">
+						<Icon name="gitColor" />
+						<p class="font-semibold text-lg ml-4">Git</p>
+					</div>
+					<div class="flex">
+						<Icon name="javascriptColor" />
+						<p class="font-semibold text-lg ml-4">JavaScript</p>
+					</div>
+					<div class="flex">
+						<Icon name="reactColor" />
+						<p class="font-semibold text-lg ml-4">React</p>
+					</div>
+					<div class="flex">
+						<Icon name="nodeColor" />
+						<p class="font-semibold text-lg ml-4">Node.js</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-three mb-28">
+				<h2 class="text-4xl text-navy-blue font-semibold pb-8">Work and projects</h2>
+				<div class="grid grid-cols-6">
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+					<div class="w-[140px]">
+						<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
+						<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+							<p class="text-white text-sm ml-2">Ness Digital</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="mb-28">
-			<h2 class="text-4xl text-navy-blue font-semibold pb-8">Skills</h2>
-			<div class="w-6/12 grid grid-cols-3 gap-x-6 gap-y-10">
-				<div class="flex">
-					<Icon name="figmaColor" />
-					<p class="font-semibold text-lg ml-4">UX/UI</p>
-				</div>
-				<div class="flex">
-					<Icon name="astroColor" />
-					<p class="font-semibold text-lg ml-4">Astro</p>
-				</div>
-				<div class="flex">
-					<Icon name="tailwindColor" />
-					<p class="font-semibold text-lg ml-4">Tailwind CSS</p>
-				</div>
-				<div class="flex">
-					<Icon name="mongodbColor" />
-					<p class="font-semibold text-lg ml-4">MongoDB</p>
-				</div>
-				<div class="flex">
-					<Icon name="awsColor" />
-					<p class="font-semibold text-lg ml-4">AWS</p>
-				</div>
-				<div class="flex">
-					<Icon name="gitColor" />
-					<p class="font-semibold text-lg ml-4">Git</p>
-				</div>
-				<div class="flex">
-					<Icon name="javascriptColor" />
-					<p class="font-semibold text-lg ml-4">JavaScript</p>
-				</div>
-				<div class="flex">
-					<Icon name="reactColor" />
-					<p class="font-semibold text-lg ml-4">React</p>
-				</div>
-				<div class="flex">
-					<Icon name="nodeColor" />
-					<p class="font-semibold text-lg ml-4">Node.js</p>
-				</div>
-			</div>
-		</div>
-		<div>
-			<h2 class="text-4xl text-navy-blue font-semibold pb-8">Work and projects</h2>
-			<div class="w-[140px]">
-				<div class="h-[129px] bg-[#D9D9D9] rounded-t-lg"></div>
-				<div class="h-[36px] bg-bleu-de-france rounded-b-lg"></div>
-			</div>
+		<div class="footer bg-bleu-de-france h-[130px]">
+			
 		</div>
 	</body>
 </html>
