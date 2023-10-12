@@ -6,9 +6,12 @@ import AstroColor from "./Icon/AstroColor.astro"
 import MongoDBColor from "./Icon/MongoDBColor.astro"
 import AWSColor from "./Icon/AWSColor.astro"
 import GitColor from "./Icon/GitColor.astro"
-import JavascriptColor from "./Icon/JavascriptColor.astro"
+import JavaScriptColor from "./Icon/JavaScriptColor.astro"
 import ReactColor from "./Icon/ReactColor.astro"
 import NodeColor from "./Icon/NodeColor.astro"
+import X from "./Icon/X.astro"
+import LinkedIn from "./Icon/LinkedIn.astro"
+import GitHub from "./Icon/GitHub.astro"
 
 const iconMap = {
     figma: Figma,
@@ -18,9 +21,12 @@ const iconMap = {
     mongodbColor: MongoDBColor,
     awsColor: AWSColor,
     gitColor: GitColor,
-    javascriptColor: JavascriptColor,
+    javascriptColor: JavaScriptColor,
     reactColor: ReactColor,
     nodeColor: NodeColor,
+    x: X,
+    linkedin: LinkedIn,
+    github: GitHub,
 }
 
 const IconComponent = iconMap[Astro.props.name]
