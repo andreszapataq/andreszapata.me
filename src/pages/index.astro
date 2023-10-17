@@ -14,7 +14,7 @@ import Icon from "../components/Icon.astro"
 	</head>
 	<body>
 		<div class="main p-12">
-			<div class="section-one flex justify-between mb-28">
+			<div class="section-one h-[390px] flex justify-between">
 				<div>
 					<img src={AZLogo} alt="{az}" class="w-[220px]" />
 				</div>
@@ -28,51 +28,51 @@ import Icon from "../components/Icon.astro"
 					<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact us</button>
 				</div>
 			</div>
-			<div class="section-two h-[332px] flex flex-col items-center">
-				<h2 class="text-4xl text-navy-blue font-semibold self-start mb-14">Skills</h2>
+			<div class="section-two h-[332px] flex flex-col items-center mb-24">
+				<h2 class="text-4xl text-navy-blue font-semibold self-start mb-16">Skills</h2>
 				<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
 					<div class="flex">
 						<Icon name="figma" />
-						<p class="font-semibold text-lg ml-4">UX/UI</p>
+						<p class="font-medium text-lg ml-4">UX/UI</p>
 					</div>
 					<div class="flex">
 						<Icon name="astro" />
-						<p class="font-semibold text-lg ml-4">Astro</p>
+						<p class="font-medium text-lg ml-4">Astro</p>
 					</div>
 					<div class="flex">
 						<Icon name="tailwind" />
-						<p class="font-semibold text-lg ml-4">Tailwind CSS</p>
+						<p class="font-medium text-lg ml-4">Tailwind CSS</p>
 					</div>
 					<div class="flex">
 						<Icon name="mongodb" />
-						<p class="font-semibold text-lg ml-4">MongoDB</p>
+						<p class="font-medium text-lg ml-4">MongoDB</p>
 					</div>
 					<div class="flex">
 						<Icon name="aws" />
-						<p class="font-semibold text-lg ml-4">AWS</p>
+						<p class="font-medium text-lg ml-4">AWS</p>
 					</div>
 				</div>
 				<div class="w-6/12 grid grid-cols-4 justify-items-center">
 					<div class="flex">
 						<Icon name="git" />
-						<p class="font-semibold text-lg ml-4">Git</p>
+						<p class="font-medium text-lg ml-4">Git</p>
 					</div>
 					<div class="flex">
 						<Icon name="javascript" />
-						<p class="font-semibold text-lg ml-4">JavaScript</p>
+						<p class="font-medium text-lg ml-4">JavaScript</p>
 					</div>
 					<div class="flex">
 						<Icon name="react" />
-						<p class="font-semibold text-lg ml-4">React</p>
+						<p class="font-medium text-lg ml-4">React</p>
 					</div>
 					<div class="flex">
 						<Icon name="node" />
-						<p class="font-semibold text-lg ml-4">Node.js</p>
+						<p class="font-medium text-lg ml-4">Node.js</p>
 					</div>
 				</div>
 			</div>
-			<div class="section-three mb-28">
-				<h2 class="text-4xl text-navy-blue font-semibold mb-8">Work and projects</h2>
+			<div class="section-three mb-44">
+				<h2 class="text-4xl text-navy-blue font-semibold mb-16">Work and projects</h2>
 				<div class="grid grid-cols-6">
 					<div class="w-[140px] drop-shadow-[0_0_8px_rgba(0,0,0,0.11)]">
 						<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
@@ -125,11 +125,15 @@ import Icon from "../components/Icon.astro"
 				</div>
 			</div>
 		</div>
-		<div class="contact bg-[#292929] h-[422px] p-12">
+		<div class="section-contact bg-[#292929] h-[450px] p-12">
 			<h2 class="text-4xl text-white font-semibold mb-8">Contact us</h2>
 			<div class="grid grid-cols-3">
 				<div>
-					<p class="text-white">1</p>
+					<p class="text-white mb-3">Our email</p>
+					<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-5">
+						<p class="font-medium mr-2">contacto@andreszapata.me</p>
+						<Icon name="paperplane" />
+					</button>
 				</div>
 				<div class="flex justify-center">
 					<p class="text-white">Perhaps you'd like to complete this form...</p>
@@ -139,7 +143,7 @@ import Icon from "../components/Icon.astro"
 				</div>
 			</div>
 		</div>
-		<div class="footer bg-bleu-de-france h-[130px] flex flex-col justify-center items-center">
+		<div class="section-footer bg-bleu-de-france h-[130px] flex flex-col justify-center items-center">
 			<div class="w-[212px] flex justify-between mt-6">
 				<a href="https://twitter.com/andreszapataq" target="_blank"><Icon name="x" /></a>
 				<a href="https://www.linkedin.com/in/andreszapataq/" target="_blank"><Icon name="linkedin" /></a>
