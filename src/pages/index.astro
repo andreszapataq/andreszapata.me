@@ -20,7 +20,7 @@ import Icon from "../components/Icon.astro"
 				</div>
 				<div>
 					<h1 class="text-[50px] font-medium">Hi there!</h1>
-					<p class="text-xl font-light pb-4">
+					<p class="text-xl font-light mb-4">
 						I like the new <span class="font-semibold">ideas</span>, let's work on them together. I really enjoy designing,<br>
 						developing software and bringing interesting projects to life.<br>
 						These are some of my skills and portfolio, I hope you like it.
@@ -28,49 +28,51 @@ import Icon from "../components/Icon.astro"
 					<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact us</button>
 				</div>
 			</div>
-			<div class="section-two mb-28">
-				<h2 class="text-4xl text-navy-blue font-semibold pb-8">Skills</h2>
-				<div class="w-6/12 grid grid-cols-3 gap-x-6 gap-y-10">
+			<div class="section-two h-[332px] flex flex-col items-center">
+				<h2 class="text-4xl text-navy-blue font-semibold self-start mb-12">Skills</h2>
+				<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
 					<div class="flex">
-						<Icon name="figmaColor" />
+						<Icon name="figma" />
 						<p class="font-semibold text-lg ml-4">UX/UI</p>
 					</div>
 					<div class="flex">
-						<Icon name="astroColor" />
+						<Icon name="astro" />
 						<p class="font-semibold text-lg ml-4">Astro</p>
 					</div>
 					<div class="flex">
-						<Icon name="tailwindColor" />
+						<Icon name="tailwind" />
 						<p class="font-semibold text-lg ml-4">Tailwind CSS</p>
 					</div>
 					<div class="flex">
-						<Icon name="mongodbColor" />
+						<Icon name="mongodb" />
 						<p class="font-semibold text-lg ml-4">MongoDB</p>
 					</div>
 					<div class="flex">
-						<Icon name="awsColor" />
+						<Icon name="aws" />
 						<p class="font-semibold text-lg ml-4">AWS</p>
 					</div>
+				</div>
+				<div class="w-6/12 grid grid-cols-4 justify-items-center">
 					<div class="flex">
-						<Icon name="gitColor" />
+						<Icon name="git" />
 						<p class="font-semibold text-lg ml-4">Git</p>
 					</div>
 					<div class="flex">
-						<Icon name="javascriptColor" />
+						<Icon name="javascript" />
 						<p class="font-semibold text-lg ml-4">JavaScript</p>
 					</div>
 					<div class="flex">
-						<Icon name="reactColor" />
+						<Icon name="react" />
 						<p class="font-semibold text-lg ml-4">React</p>
 					</div>
 					<div class="flex">
-						<Icon name="nodeColor" />
+						<Icon name="node" />
 						<p class="font-semibold text-lg ml-4">Node.js</p>
 					</div>
 				</div>
 			</div>
 			<div class="section-three mb-28">
-				<h2 class="text-4xl text-navy-blue font-semibold pb-8">Work and projects</h2>
+				<h2 class="text-4xl text-navy-blue font-semibold mb-8">Work and projects</h2>
 				<div class="grid grid-cols-6">
 					<div class="w-[140px] drop-shadow-[0_0_8px_rgba(0,0,0,0.11)]">
 						<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
@@ -124,7 +126,7 @@ import Icon from "../components/Icon.astro"
 			</div>
 		</div>
 		<div class="contact bg-[#292929] h-[422px] p-12">
-			<h2 class="text-4xl text-white font-semibold pb-8">Contact us</h2>
+			<h2 class="text-4xl text-white font-semibold mb-8">Contact us</h2>
 			<div class="grid grid-cols-3">
 				<div>
 					<p class="text-white">1</p>
