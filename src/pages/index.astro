@@ -5,6 +5,7 @@ import Icon from "../components/Icon.astro"
 ---
 
 <html lang="en">
+<!-- <html lang="en" class="scroll-smooth"> -->
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -25,7 +26,9 @@ import Icon from "../components/Icon.astro"
 						developing software and bringing interesting projects to life.<br>
 						These are some of my skills and portfolio, I hope you like it.
 					</p>
-					<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact us</button>
+					<a href="#section-contact">
+						<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact us</button>
+					</a>
 				</div>
 			</div>
 			<div class="section-two">
@@ -129,22 +132,33 @@ import Icon from "../components/Icon.astro"
 				</div>
 			</div>
 		</div>
-		<div class="section-contact bg-[#292929] p-12">
+		<div id="section-contact" class="section-contact bg-[#292929] p-12">
 			<h2 class="text-4xl text-white font-semibold">Contact us</h2>
-			<div class="h-[314px] flex flex-col justify-center">
+			<div class="flex flex-col justify-center">
 				<div class="grid grid-cols-3 items-center">
 					<div>
 						<p class="text-white mb-3">Our email</p>
-						<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-5">
-							<p class="font-medium mr-2">contacto@andreszapata.me</p>
-							<Icon name="paperplane" />
-						</button>
+						<a href="mailto:contacto@andreszapata.me">
+							<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-4">
+								<p class="font-medium mr-2">contacto@andreszapata.me</p>
+								<Icon name="paperplane" />
+							</button>
+						</a>
 					</div>
 					<div class="flex justify-center">
 						<p class="text-white">Perhaps you'd like to complete this form...</p>
 					</div>
 					<div>
-						<p class="text-white">3</p>
+						<form action="" class="flex flex-col">
+							<label for=""></label>
+							<input class="appearance-none bg-transparent border-none" type="text" name="name" placeholder="Name">
+							<label for=""></label>
+							<input class="appearance-none bg-transparent" type="email" name="email" placeholder="Email">
+							<label for="message"></label>
+							<textarea class="appearance-none bg-transparent resize-none" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+							<button class="bg-bleu-de-france rounded-lg text-white px-5 py-4" type="button">Send</button>
+							<!-- <input class="bg-bleu-de-france rounded-lg text-white px-5 py-4" type="submit" value="Send"> -->
+						</form>
 					</div>
 				</div>
 			</div>
