@@ -1,8 +1,65 @@
 import React, { useState } from "react";
-import Figma from "./Icon/Figma.svg";
-import FigmaColor from "./Icon/FigmaColor.svg";
+import Figma from "./Icon/svg/Figma.svg";
+import FigmaColor from "./Icon/svg/FigmaColor.svg";
+import Astro from "./Icon/svg/Astro.svg";
+import AstroColor from "./Icon/svg/AstroColor.svg";
+import Tailwind from "./Icon/svg/Tailwind.svg";
+import TailwindColor from "./Icon/svg/TailwindColor.svg";
+import MongoDB from "./Icon/svg/MongoDB.svg";
+import MongoDBColor from "./Icon/svg/MongoDBColor.svg";
+import AWS from "./Icon/svg/AWS.svg";
+import AWSColor from "./Icon/svg/AWSColor.svg";
+import Git from "./Icon/svg/Git.svg";
+import GitColor from "./Icon/svg/GitColor.svg";
+import JavaScript from "./Icon/svg/JavaScript.svg";
+import JavaScriptColor from "./Icon/svg/JavaScriptColor.svg";
+import ReactBlack from "./Icon/svg/React.svg";
+import ReactColor from "./Icon/svg/ReactColor.svg";
+import Node from "./Icon/svg/Node.svg";
+import NodeColor from "./Icon/svg/NodeColor.svg";
 
-const FigmaIcon = () => {
+const FigmaIcon = ({name, alt, title}) => {
+  const selectIcon = {
+    figma: {
+      black: Figma,
+      color: FigmaColor
+    },
+    astro: {
+      black: Astro,
+      color: AstroColor
+    },
+    tailwind: {
+      black: Tailwind,
+      color: TailwindColor
+    },
+    mongodb: {
+      black: MongoDB,
+      color: MongoDBColor
+    },
+    aws: {
+      black: AWS,
+      color: AWSColor
+    },
+    git: {
+      black: Git,
+      color: GitColor
+    },
+    javascript: {
+      black: JavaScript,
+      color: JavaScriptColor
+    },
+    react: {
+      black: ReactBlack,
+      color: ReactColor
+    },
+    node: {
+      black: Node,
+      color: NodeColor
+    }
+  }
+  
+  const theIcon = selectIcon[name]
+
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   const handleMouseOver = () => {
@@ -21,12 +78,12 @@ const FigmaIcon = () => {
     >
         <div>
             {isMouseOver ? (
-                <img src={FigmaColor} alt="FigmaColor" />
+                <img src={theIcon.color} alt={alt} />
             ) : (
-                <img src={Figma} alt="Figma" />
+                <img src={theIcon.black} alt={alt} />
             )}
         </div>
-        <p className="font-medium text-lg ml-4">UX/UI</p>
+        <p className="font-medium text-lg ml-4">{title}</p>
     </div>
   );
 }

@@ -5,8 +5,8 @@ import Icon from "../components/Icon.astro"
 import FigmaIcon from "../components/FigmaIcon"
 ---
 
-<html lang="en">
-<!-- <html lang="en" class="scroll-smooth"> -->
+<!-- <html lang="en"> -->
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -38,41 +38,33 @@ import FigmaIcon from "../components/FigmaIcon"
 					<!-- Agregar responsive al grid de los iconos? -->
 					<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
 						<div class="cursor-pointer transition-transform hover:scale-125">
-							<FigmaIcon client:load />
+							<FigmaIcon client:load name="figma" alt="Figma" title="UX/UI" />
 						</div>
-						<div class="flex">
-							<Icon name="astro" />
-							<p class="font-medium text-lg ml-4">Astro</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="astro" alt="Astro" title="Astro" />
 						</div>
-						<div class="flex">
-							<Icon name="tailwind" />
-							<p class="font-medium text-lg ml-4">Tailwind CSS</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="tailwind" alt="Tailwind" title="Tailwind CSS" />
 						</div>
-						<div class="flex">
-							<Icon name="mongodb" />
-							<p class="font-medium text-lg ml-4">MongoDB</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="mongodb" alt="MongoDB" title="MongoDB" />
 						</div>
-						<div class="flex">
-							<Icon name="aws" />
-							<p class="font-medium text-lg ml-4">AWS</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="aws" alt="AWS" title="AWS" />
 						</div>
 					</div>
 					<div class="w-6/12 grid grid-cols-4 justify-items-center">
-						<div class="flex">
-							<Icon name="git" />
-							<p class="font-medium text-lg ml-4">Git</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="git" alt="Git" title="Git" />
 						</div>
-						<div class="flex">
-							<Icon name="javascript" />
-							<p class="font-medium text-lg ml-4">JavaScript</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="javascript" alt="JavaScript" title="JavaScript" />
 						</div>
-						<div class="flex">
-							<Icon name="react" />
-							<p class="font-medium text-lg ml-4">React</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="react" alt="React" title="React" />
 						</div>
-						<div class="flex">
-							<Icon name="node" />
-							<p class="font-medium text-lg ml-4">Node.js</p>
+						<div class="cursor-pointer transition-transform hover:scale-125">
+							<FigmaIcon client:load name="node" alt="Node.js" title="Node.js" />
 						</div>
 					</div>
 				</div>
