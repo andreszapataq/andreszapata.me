@@ -5,8 +5,8 @@ import Icon from "../components/Icon.astro"
 import FigmaIcon from "../components/FigmaIcon"
 ---
 
-<!-- <html lang="en"> -->
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<!-- <html lang="en" class="scroll-smooth"> -->
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -28,7 +28,7 @@ import FigmaIcon from "../components/FigmaIcon"
 						These are some of my skills and portfolio, I hope you like it.
 					</p>
 					<a href="#section-contact">
-						<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors hover:bg-bleu-de-france hover:text-white">Contact us</button>
+						<button class="border-[1.5px] border-bleu-de-france rounded-lg px-5 py-2 text-sm font-semibold transition-colors duration-200 hover:bg-bleu-de-france hover:text-white">Contact us</button>
 					</a>
 				</div>
 			</div>
@@ -37,33 +37,33 @@ import FigmaIcon from "../components/FigmaIcon"
 				<div class="h-[350px] flex flex-col justify-center items-center">
 					<!-- Agregar responsive al grid de los iconos? -->
 					<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="figma" alt="Figma" title="UX/UI" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="astro" alt="Astro" title="Astro" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="tailwind" alt="Tailwind" title="Tailwind CSS" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="mongodb" alt="MongoDB" title="MongoDB" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="aws" alt="AWS" title="AWS" />
 						</div>
 					</div>
 					<div class="w-6/12 grid grid-cols-4 justify-items-center">
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="git" alt="Git" title="Git" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="javascript" alt="JavaScript" title="JavaScript" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="react" alt="React" title="React" />
 						</div>
-						<div class="cursor-pointer transition-transform hover:scale-125">
+						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<FigmaIcon client:load name="node" alt="Node.js" title="Node.js" />
 						</div>
 					</div>
@@ -73,12 +73,34 @@ import FigmaIcon from "../components/FigmaIcon"
 				<h2 class="text-4xl text-navy-blue font-semibold">Work and projects</h2>
 				<div class="h-[350px] flex flex-col justify-center">
 					<div class="grid grid-cols-6">
-						<div class="w-[140px] drop-shadow-[0_0_8px_rgba(0,0,0,0.11)]">
-							<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-								<Icon name="ness" />
-							</div>
-							<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-								<p class="text-white text-sm ml-2">Ness Digital</p>
+						<div class="group w-[140px] h-[165px] [perspective:1000px]">
+							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+								<div class="absolute inset-0">
+									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
+										<Icon name="ness" />
+									</div>
+									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
+										<p class="text-white text-sm ml-2">Ness Digital</p>
+									</div>
+								</div>
+								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+									<div class="h-full flex flex-col justify-between p-3.5">
+										<div>
+											<h1 class="text-navy-blue font-medium text-[13px]">Ness Digital</h1>
+											<p class="text-[11px]">Healthcare SaaS</p>
+										</div>
+										<div>
+											<ul class="list-disc list-inside text-xs">
+												<li>Product designer</li>
+												<li>Frontend dev.</li>
+												<li>DevOps</li>
+											</ul>
+										</div>
+										<div>
+											<p class="text-xs">app.nessdigital.co</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="w-[140px] drop-shadow-[0_0_8px_rgba(0,0,0,0.11)]">
@@ -133,7 +155,7 @@ import FigmaIcon from "../components/FigmaIcon"
 						<p class="text-white mb-3">Our email</p>
 						<a href="mailto:contacto@andreszapata.me">
 							<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-4">
-								<p class="font-medium mr-2">contacto@andreszapata.me</p>
+								<p class="mr-2">contacto@andreszapata.me</p>
 								<Icon name="paperplane" />
 							</button>
 						</a>
