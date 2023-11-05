@@ -3,7 +3,7 @@ import '@fontsource-variable/urbanist';
 import AZLogo from '/az-logo.svg'
 import World from '../components/Icon/svg/World.svg'
 import Icon from "../components/Icon.astro"
-import FigmaIcon from "../components/FigmaIcon"
+import ReactIcon from "../components/ReactIcon"
 ---
 
 <html lang="en">
@@ -39,33 +39,33 @@ import FigmaIcon from "../components/FigmaIcon"
 					<!-- Agregar responsive al grid de los iconos? -->
 					<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="figma" alt="Figma" title="UX/UI" />
+							<ReactIcon client:load name="figma" alt="Figma" title="UX/UI" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="astro" alt="Astro" title="Astro" />
+							<ReactIcon client:load name="astro" alt="Astro" title="Astro" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="tailwind" alt="Tailwind" title="Tailwind CSS" />
+							<ReactIcon client:load name="tailwind" alt="Tailwind" title="Tailwind CSS" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="mongodb" alt="MongoDB" title="MongoDB" />
+							<ReactIcon client:load name="mongodb" alt="MongoDB" title="MongoDB" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="aws" alt="AWS" title="AWS" />
+							<ReactIcon client:load name="aws" alt="AWS" title="AWS" />
 						</div>
 					</div>
 					<div class="w-6/12 grid grid-cols-4 justify-items-center">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="git" alt="Git" title="Git" />
+							<ReactIcon client:load name="git" alt="Git" title="Git" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="javascript" alt="JavaScript" title="JavaScript" />
+							<ReactIcon client:load name="javascript" alt="JavaScript" title="JavaScript" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="react" alt="React" title="React" />
+							<ReactIcon client:load name="react" alt="React" title="React" />
 						</div>
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
-							<FigmaIcon client:load name="node" alt="Node.js" title="Node.js" />
+							<ReactIcon client:load name="node" alt="Node.js" title="Node.js" />
 						</div>
 					</div>
 				</div>
@@ -213,8 +213,8 @@ import FigmaIcon from "../components/FigmaIcon"
 										<div>
 											<ul class="list-disc list-inside text-xs">
 												<li>Web dev.</li>
-												<li>WordPress</li>
 												<li>Logo designer</li>
+												<!-- <li></li> -->
 											</ul>
 										</div>
 										<div class="self-center">
@@ -265,7 +265,7 @@ import FigmaIcon from "../components/FigmaIcon"
 					<div>
 						<p class="text-white mb-3">Our email</p>
 						<a href="mailto:contacto@andreszapata.me">
-							<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-4">
+							<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-4 transition-transform duration-2000 hover:scale-105">
 								<p class="mr-2">contacto@andreszapata.me</p>
 								<Icon name="paperplane" />
 							</button>
@@ -285,7 +285,7 @@ import FigmaIcon from "../components/FigmaIcon"
 							<textarea class="appearance-none bg-transparent border rounded-lg resize-none p-2" name="message" id="message" cols="30" rows="6" placeholder="Your message"></textarea>
 							<!-- <input class="bg-bleu-de-france rounded-lg text-white px-5 py-4" type="submit" value="Send"> -->
 						</form>
-						<button class="bg-bleu-de-france rounded-lg text-white font-medium px-11 py-2.5" type="button">Send</button>
+						<button class="bg-bleu-de-france rounded-lg text-white font-medium px-11 py-2.5 transition-colors duration-200 hover:bg-blue-700" type="button">Send</button>
 					</div>
 				</div>
 			</div>
@@ -297,8 +297,9 @@ import FigmaIcon from "../components/FigmaIcon"
 				<a href="https://github.com/andreszapataq" target="_blank"><Icon name="github" /></a>
 			</div>
 			<p class="text-white text-[13px]">
-				&copy; 2023 andreszapata.me
+				&copy; <span id="year"></span> andreszapata.me
 			</p>
 		</div>
+		<script src="../utils/utils.js"></script>
 	</body>
 </html>
