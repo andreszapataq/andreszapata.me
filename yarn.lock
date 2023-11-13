@@ -370,11 +370,6 @@
   "resolved" "https://registry.npmjs.org/@fontsource-variable/urbanist/-/urbanist-5.0.9.tgz"
   "version" "5.0.9"
 
-"@fontsource/urbanist@^5.0.11":
-  "integrity" "sha512-y5K0/7hotigxLw53lXLIDEUWVTIxvrgHbrEsdBzSwrxNCjOW+lf5hjvvBm4xk430LS5UkMl/GGiXxB4n6v51rA=="
-  "resolved" "https://registry.npmjs.org/@fontsource/urbanist/-/urbanist-5.0.11.tgz"
-  "version" "5.0.11"
-
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   "integrity" "sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ=="
   "resolved" "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz"
