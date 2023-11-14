@@ -16,8 +16,8 @@ import ReactIcon from "../components/ReactIcon"
 		<title>andreszapata.me</title>
 	</head>
 	<body>
-		<div class="main p-12">
-			<div class="section-one flex justify-between h-[390px]">
+		<div class="main p-4 lg:p-12">
+			<div class="section-one min-h-[390px] flex flex-col lg:flex-row justify-between">
 				<div>
 					<img src={AZLogo} alt="{az}" class="w-[220px]" />
 				</div>
@@ -35,9 +35,9 @@ import ReactIcon from "../components/ReactIcon"
 			</div>
 			<div class="section-two">
 				<h2 class="text-4xl text-navy-blue font-semibold">Skills</h2>
-				<div class="h-[350px] flex flex-col justify-center items-center">
+				<div class="min-h-[350px] flex flex-col justify-center items-center">
 					<!-- Agregar responsive al grid de los iconos? -->
-					<div class="w-7/12 grid grid-cols-5 justify-items-center mb-20">
+					<div class="w-11/12 lg:w-7/12 grid grid-cols-2 lg:grid-cols-5 justify-items-center mb-20">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="figma" alt="Figma" title="UX/UI" />
 						</div>
@@ -54,7 +54,7 @@ import ReactIcon from "../components/ReactIcon"
 							<ReactIcon client:load name="aws" alt="AWS" title="AWS" />
 						</div>
 					</div>
-					<div class="w-6/12 grid grid-cols-4 justify-items-center">
+					<div class="w-11/12 lg:w-6/12 grid grid-cols-2 lg:grid-cols-4 justify-items-center">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="git" alt="Git" title="Git" />
 						</div>
@@ -72,8 +72,8 @@ import ReactIcon from "../components/ReactIcon"
 			</div>
 			<div class="section-three">
 				<h2 class="text-4xl text-navy-blue font-semibold">Work and projects</h2>
-				<div class="h-[350px] flex flex-col justify-center">
-					<div class="grid grid-cols-6">
+				<div class="min-h-[350px] flex flex-col justify-center">
+					<div class="grid grid-cols-2 lg:grid-cols-6">
 						<div class="group w-[140px] h-[165px] [perspective:1000px]">
 							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 								<div class="absolute inset-0">
@@ -258,9 +258,9 @@ import ReactIcon from "../components/ReactIcon"
 				</div>
 			</div>
 		</div>
-		<div id="section-contact" class="section-contact bg-[#292929] p-12">
+		<div id="section-contact" class="section-contact p-4 lg:p-12 bg-[#292929]">
 			<h2 class="text-4xl text-white font-semibold">Contact us</h2>
-			<div class="grid grid-cols-3 items-center">
+			<div class="grid grid-cols-1 lg:grid-cols-3 items-center">
 				<div>
 					<p class="text-white mb-3">Our email</p>
 					<a href="mailto:contacto@andreszapata.me">
@@ -275,7 +275,7 @@ import ReactIcon from "../components/ReactIcon"
 				</div>
 				<div class="justify-self-end">
 					<!-- Agregar responsive al formulario -->
-					<form action="https://formspree.io/f/mwkdjvpj" method="post" class="w-[500px] flex flex-col">
+					<form action="https://formspree.io/f/mwkdjvpj" method="post" class="w-[325px] lg:w-[500px] flex flex-col">
 						<div class="relative h-11 w-full min-w-[200px] mb-8">
 							<input
 								class="peer h-full w-full border-b border-gray-500 bg-transparent pt-4 pb-1.5 text-white outline outline-0 transition-all placeholder-shown:border-gray-500 focus:border-bleu-de-france focus:outline-0 disabled:border-0 disabled:bg-gray-50"
