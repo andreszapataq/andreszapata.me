@@ -35,9 +35,9 @@ import ReactIcon from "../components/ReactIcon"
 			</div>
 			<div class="section-two">
 				<h2 class="text-4xl text-navy-blue font-semibold">Skills</h2>
-				<div class="min-h-[350px] flex flex-col lg:justify-center items-center">
+				<div class="min-h-[350px] flex flex-col justify-center items-center">
 					<!-- Agregar responsive al grid de los iconos -->
-					<div class="w-11/12 lg:w-7/12 grid grid-cols-2 lg:grid-cols-5 justify-items-center lg:mb-20">
+					<div class="w-11/12 lg:w-7/12 grid grid-cols-2 lg:grid-cols-5 gap-8 justify-items-center">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="figma" alt="Figma" title="UX/UI" />
 						</div>
@@ -53,8 +53,6 @@ import ReactIcon from "../components/ReactIcon"
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="aws" alt="AWS" title="AWS" />
 						</div>
-					</div>
-					<div class="w-11/12 lg:w-6/12 grid grid-cols-2 lg:grid-cols-4 justify-items-center">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="git" alt="Git" title="Git" />
 						</div>
@@ -68,6 +66,8 @@ import ReactIcon from "../components/ReactIcon"
 							<ReactIcon client:load name="node" alt="Node.js" title="Node.js" />
 						</div>
 					</div>
+					<!-- <div class="w-11/12 lg:w-6/12 grid grid-cols-2 lg:grid-cols-4 justify-items-center">
+					</div> -->
 				</div>
 			</div>
 			<div class="section-three">
