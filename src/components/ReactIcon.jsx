@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Figma from "./Icon/svg/Figma.svg";
 import FigmaColor from "./Icon/svg/FigmaColor.svg";
+import Illustrator from "./Icon/svg/Illustrator.svg"
+import IllustratorColor from "./Icon/svg/IllustratorColor.svg"
 import Astro from "./Icon/svg/Astro.svg";
 import AstroColor from "./Icon/svg/AstroColor.svg";
 import Tailwind from "./Icon/svg/Tailwind.svg";
@@ -23,6 +25,10 @@ const FigmaIcon = ({name, alt, title}) => {
     figma: {
       black: Figma,
       color: FigmaColor
+    },
+    illustrator: {
+      black: Illustrator,
+      color: IllustratorColor
     },
     astro: {
       black: Astro,
