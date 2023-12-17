@@ -78,7 +78,7 @@ const FigmaIcon = ({name, alt, title}) => {
 
   return (
     <div
-        className="flex"
+        className="flex flex-col items-center lg:flex-row"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
     >
@@ -89,7 +89,7 @@ const FigmaIcon = ({name, alt, title}) => {
                 <img src={theIcon.black} alt={alt} />
             )}
         </div>
-        <p className="font-medium text-lg ml-4">{title}</p>
+        <p className="font-medium text-lg lg:ml-4">{title}</p>
     </div>
   );
 }
