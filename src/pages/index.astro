@@ -6,8 +6,7 @@ import Icon from "../components/Icon.astro"
 import ReactIcon from "../components/ReactIcon"
 ---
 
-<html lang="en">
-<!-- <html lang="en" class="scroll-smooth"> -->
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -35,7 +34,7 @@ import ReactIcon from "../components/ReactIcon"
 			</div>
 			<div class="section-two">
 				<h2 class="text-4xl text-navy-blue font-semibold">Skills</h2>
-				<div class="min-h-[350px] flex flex-col justify-center items-center mt-8 lg:mt-0">
+				<div class="min-h-[350px] flex flex-col justify-center items-center mt-12 lg:mt-0">
 					<div class="w-11/12 lg:w-7/12 grid grid-cols-2 lg:grid-cols-5 gap-x-8 lg:gap-x-4 gap-y-10 lg:gap-y-20 justify-items-center">
 						<div class="cursor-pointer transition-transform duration-200 hover:scale-125">
 							<ReactIcon client:load name="figma" alt="Figma" title="UX/UI" />
@@ -72,8 +71,8 @@ import ReactIcon from "../components/ReactIcon"
 			</div>
 			<div class="section-three">
 				<h2 class="text-4xl text-navy-blue font-semibold">Work and projects</h2>
-				<div class="min-h-[350px] flex flex-col justify-center my-8 lg:my-0">
-					<div class="grid grid-cols-2 lg:grid-cols-6 gap-y-10 lg:gap-y-0 justify-items-center lg:justify-items-start">
+				<div class="min-h-[350px] flex flex-col justify-center my-12 lg:my-0">
+					<div class="grid grid-cols-2 lg:grid-cols-6 gap-y-12 lg:gap-y-0 justify-items-center lg:justify-items-start">
 						<div class="group w-[140px] h-[165px] [perspective:1000px]">
 							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 								<div class="absolute inset-0">
@@ -258,10 +257,10 @@ import ReactIcon from "../components/ReactIcon"
 				</div>
 			</div>
 		</div>
-		<div id="section-contact" class="section-contact p-4 lg:p-12 bg-[#292929]">
+		<div id="section-contact" class="section-contact px-4 py-8 lg:p-12 bg-[#292929]">
 			<h2 class="text-4xl text-white font-semibold">Contact us</h2>
-			<div class="grid grid-cols-1 lg:grid-cols-3 items-center">
-				<div>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-y-14 items-center mt-8 lg:mt-0">
+				<div class="flex flex-col justify-center items-center lg:items-start">
 					<p class="text-white mb-3">Our email</p>
 					<a href="mailto:contacto@andreszapata.me">
 						<button class="flex items-center bg-bleu-de-france rounded-lg text-white px-6 py-4 transition-transform duration-2000 hover:scale-105">
@@ -273,8 +272,7 @@ import ReactIcon from "../components/ReactIcon"
 				<div class="flex justify-center">
 					<p class="text-white">Perhaps you'd like to complete this form...</p>
 				</div>
-				<div class="justify-self-end">
-					<!-- Agregar responsive al formulario -->
+				<div class="justify-self-center lg:justify-self-end">
 					<form action="https://formspree.io/f/mwkdjvpj" method="post" class="w-[325px] lg:w-[500px] flex flex-col">
 						<div class="relative h-11 w-full min-w-[200px] mb-8">
 							<input
@@ -296,12 +294,12 @@ import ReactIcon from "../components/ReactIcon"
 						</div>
 						<label for="message"></label>
 						<textarea class="border border-gray-500 bg-transparent rounded-lg resize-none p-2 mb-8 text-white outline outline-0 placeholder:text-sm focus:outline-0 focus:border-bleu-de-france focus:ring-bleu-de-france focus:ring-1" name="message" id="message" cols="30" rows="6" placeholder="Your message" required></textarea>
-						<button class="w-[125px] bg-bleu-de-france rounded-lg text-white font-medium px-11 py-2.5 transition-colors duration-200 hover:bg-blue-700" type="submit">Send</button>
+						<button class="w-[150px] lg:w-[125px] bg-bleu-de-france rounded-lg text-white font-medium self-center lg:self-start px-11 py-3 lg:py-2.5 transition-colors duration-200 hover:bg-blue-700" type="submit">Send</button>
 					</form>
 				</div>
 			</div>
 		</div>
-		<div class="section-footer bg-bleu-de-france h-[130px] flex flex-col justify-center items-center">
+		<div class="section-footer bg-bleu-de-france min-h-[100px] lg:min-h-[130px] flex flex-col justify-center items-center">
 			<div class="w-[212px] flex justify-between my-6">
 				<a href="https://twitter.com/andreszapataq" target="_blank"><Icon name="x" /></a>
 				<a href="https://www.linkedin.com/in/andreszapataq/" target="_blank"><Icon name="linkedin" /></a>
