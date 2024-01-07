@@ -4,6 +4,10 @@ import AZLogo from '/az-logo.svg'
 import World from '../components/Icon/svg/World.svg'
 import Icon from "../components/Icon.astro"
 import ReactIcon from "../components/ReactIcon"
+import {getAllContentfulData} from "../services/contentful"
+console.log('Before calling Contentful')
+const contentfulData = await getAllContentfulData()
+console.log(contentfulData)
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -23,7 +27,7 @@ import ReactIcon from "../components/ReactIcon"
 					</a>
 				</div>
 				<div>
-					<h1 class="text-[50px] font-medium">Hi there!</h1>
+					<h1 class="text-[50px] font-medium">{contentfulData.information[0].title}</h1>
 					<p class="text-xl font-light mb-4">
 						I like the new <span class="font-semibold">ideas</span>, let's work on them together. I really enjoy designing,<br>
 						developing software and bringing interesting projects to life.<br>
