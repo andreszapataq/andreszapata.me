@@ -2,6 +2,7 @@
 import '@fontsource-variable/urbanist';
 import AZLogo from '/az-logo.svg'
 import World from '../components/Icon/svg/World.svg'
+import NewWorld from '../components/Icon/svg/NewWorld.svg'
 import Icon from "../components/Icon.astro"
 import ReactIcon from "../components/ReactIcon"
 import {getAllContentfulData} from "../services/contentful"
@@ -78,185 +79,85 @@ console.log(contentfulData)
 			<div class="section-three">
 				<h2 class="text-4xl text-navy-blue font-semibold">Work and projects</h2>
 				<div class="min-h-[350px] flex flex-col justify-center my-12 lg:my-0">
-					<div class="grid grid-cols-2 lg:grid-cols-6 gap-y-12 lg:gap-y-0 justify-items-center lg:justify-items-start">
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="ness" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">Ness Digital</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">Ness Digital</h1>
-											<p class="text-[11px]">Healthcare SaaS</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>Product designer</li>
-												<li>Frontend dev</li>
-												<li>DevOps</li>
-											</ul>
-										</div>
-										<div class="self-center">
-											<a href="https://github.com/andreszapataq" target="_blank"><img class="cursor-pointer" src={World} alt="World"></a>
-										</div>
-									</div>
-								</div>
+					<div class="grid grid-cols-1 lg:grid-cols-5 gap-y-12 lg:gap-y-0 justify-items-center lg:justify-items-start">
+						<div class="w-[205px] h-[170px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-xl">
+							<div class="mt-2">
+								<Icon name="ness" />
+								<p class="text-sm">Healthcare SaaS</p>
+							</div>
+							<div>
+								<ul class="list-disc list-inside text-xs text-[#585D68]">
+									<li>Product designer</li>
+									<li>Frontend dev</li>
+									<li>DevOps</li>
+								</ul>
+							</div>
+							<div class="self-end">
+								<a href="https://github.com/andreszapataq" target="_blank"><img class="cursor-pointer" src={NewWorld} alt="New World"></a>
 							</div>
 						</div>
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="vive" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">Vive Solutions</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">Vive Solutions</h1>
-											<p class="text-[11px]">Medical Devices</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>COO</li>
-												<li>Web dev</li>
-												<li>Logo designer</li>
-											</ul>
-										</div>
-										<div class="self-center">
-											<a href="https://vivesolutions.co/" target="_blank"><img class="cursor-pointer" src={World} alt="World"></a>
-										</div>
-									</div>
-								</div>
+						<div class="w-[205px] h-[170px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-xl">
+							<div class="mt-2">
+								<Icon name="vive" />
+								<p class="text-sm">Medical Devices</p>
+							</div>
+							<div>
+								<ul class="list-disc list-inside text-xs text-[#585D68]">
+									<li>COO</li>
+									<li>Web dev</li>
+									<li>Logo designer</li>
+								</ul>
+							</div>
+							<div class="self-end">
+								<a href="https://vivesolutions.co" target="_blank"><img class="cursor-pointer" src={NewWorld} alt="New World"></a>
 							</div>
 						</div>
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="zanto" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">Zanto</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">Zanto</h1>
-											<p class="text-[11px]">Clothing</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>Founder</li>
-												<li>Designer</li>
-												<li>Logo designer</li>
-											</ul>
-										</div>
-										<div class="self-center">
-											<img class="cursor-pointer" src={World} alt="World">
-										</div>
-									</div>
-								</div>
+						<div class="w-[205px] h-[170px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-xl">
+							<div class="mt-2">
+								<Icon name="zanto" />
+								<p class="text-sm">Clothing</p>
+							</div>
+							<div>
+								<ul class="list-disc list-inside text-xs text-[#585D68]">
+									<li>Founder</li>
+									<li>Designer</li>
+									<li>Logo designer</li>
+								</ul>
+							</div>
+							<div class="self-end">
+								<a href="#"><img class="cursor-pointer" src={NewWorld} alt="New World"></a>
 							</div>
 						</div>
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="artan" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">Artan</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">Artan</h1>
-											<p class="text-[11px]">Carpentry</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>Web dev</li>
-												<li>WordPress</li>
-												<!-- <li></li> -->
-											</ul>
-										</div>
-										<div class="self-center">
-											<a href="https://artan.com.co/" target="_blank"><img class="cursor-pointer" src={World} alt="World"></a>
-										</div>
-									</div>
-								</div>
+						<div class="w-[205px] h-[170px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-xl">
+							<div class="mt-2">
+								<Icon name="artan" />
+								<p class="text-sm">Carpentry</p>
+							</div>
+							<div>
+								<ul class="list-disc list-inside text-xs text-[#585D68]">
+									<li>Web dev</li>
+									<li>WordPress</li>
+									<!-- <li></li> -->
+								</ul>
+							</div>
+							<div class="self-end">
+								<a href="https://artan.com.co/" target="_blank"><img class="cursor-pointer" src={NewWorld} alt="New World"></a>
 							</div>
 						</div>
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="nab" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">NAB Tax Services</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">NAB Tax Services</h1>
-											<p class="text-[11px]">Accounting</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>Web dev</li>
-												<li>Logo designer</li>
-												<!-- <li></li> -->
-											</ul>
-										</div>
-										<div class="self-center">
-											<a href="https://nabtaxservices.com/" target="_blank"><img class="cursor-pointer" src={World} alt="World"></a>
-										</div>
-									</div>
-								</div>
+						<div class="w-[205px] h-[170px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-xl">
+							<div class="mt-2">
+								<Icon name="nab" />
+								<p class="text-sm">Accounting</p>
 							</div>
-						</div>
-						<div class="group w-[140px] h-[165px] [perspective:1000px]">
-							<div class="relative w-full h-full rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.11)] transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-								<div class="absolute inset-0">
-									<div class="h-[129px] bg-white rounded-t-lg flex justify-center items-center">
-										<Icon name="githubproject" />
-									</div>
-									<div class="h-[36px] bg-bleu-de-france rounded-b-lg flex items-center">
-										<p class="text-white text-sm ml-2">andreszapata.me</p>
-									</div>
-								</div>
-								<div class="absolute inset-0 h-full w-full rounded-lg bg-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-									<div class="h-full flex flex-col justify-between p-3.5">
-										<div>
-											<h1 class="text-navy-blue font-medium text-sm">andreszapata.me</h1>
-											<p class="text-[11px]">Personal Project</p>
-										</div>
-										<div>
-											<ul class="list-disc list-inside text-xs">
-												<li>Product designer</li>
-												<li>Fullstack dev</li>
-												<li>DevOps</li>
-											</ul>
-										</div>
-										<div class="self-center">
-											<a href="https://github.com/andreszapataq/andreszapata.me" target="_blank"><img class="cursor-pointer" src={World} alt="World"></a>
-										</div>
-									</div>
-								</div>
+							<div>
+								<ul class="list-disc list-inside text-xs text-[#585D68]">
+									<li>Web dev</li>
+									<li>Logo designer</li>
+									<!-- <li></li> -->
+								</ul>
+							</div>
+							<div class="self-end">
+								<a href="https://nabtaxservices.com/" target="_blank"><img class="cursor-pointer" src={NewWorld} alt="New World"></a>
 							</div>
 						</div>
 					</div>
