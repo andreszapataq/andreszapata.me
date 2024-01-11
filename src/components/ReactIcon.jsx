@@ -84,9 +84,9 @@ const FigmaIcon = ({name, alt, title}) => {
     >
         <div>
             {isMouseOver ? (
-                <img src={theIcon.color} alt={alt} />
+                <img src={theIcon.color.src} alt={alt} />
             ) : (
-                <img src={theIcon.black} alt={alt} />
+                <img src={theIcon.black.src} alt={alt} />
             )}
         </div>
         <p className="font-medium text-lg lg:ml-4">{title}</p>
