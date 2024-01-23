@@ -1,27 +1,29 @@
 ---
-import X from "./Icon/X.astro"
-import LinkedIn from "./Icon/LinkedIn.astro"
-import GitHub from "./Icon/GitHub.astro"
-import Ness from "./Icon/Ness.astro"
-import Vive from "./Icon/ViveSolutions.astro"
-import Zanto from "./Icon/Zanto.astro"
-import Artan from "./Icon/Artan.astro"
-import NAB from "./Icon/NAB.astro"
-import PaperPlane from "./Icon/PaperPlane.astro"
+import X from "./Icon/X.astro";
+import LinkedIn from "./Icon/LinkedIn.astro";
+import GitHub from "./Icon/GitHub.astro";
+import Ness from "./Icon/Ness.astro";
+import Vive from "./Icon/ViveSolutions.astro";
+import Zanto from "./Icon/Zanto.astro";
+import Artan from "./Icon/Artan.astro";
+import NAB from "./Icon/NAB.astro";
+import PaperPlane from "./Icon/PaperPlane.astro";
+import Arrow from "./Icon/Arrow.astro";
 
 const iconMap = {
-    x: X,
-    linkedin: LinkedIn,
-    github: GitHub,
-    ness: Ness,
-    vive: Vive,
-    zanto: Zanto,
-    artan: Artan,
-    nab: NAB,
-    paperplane: PaperPlane,
-}
+  x: X,
+  linkedin: LinkedIn,
+  github: GitHub,
+  ness: Ness,
+  vive: Vive,
+  zanto: Zanto,
+  artan: Artan,
+  nab: NAB,
+  paperplane: PaperPlane,
+  arrow: Arrow,
+};
 
-const IconComponent = iconMap[Astro.props.name]
+const IconComponent = iconMap[Astro.props.name];
 ---
 
 <IconComponent />

@@ -1,7 +1,6 @@
 ---
 import "@fontsource-variable/urbanist";
 import AZLogo from "../components/Icon/svg/az-logo.svg";
-import NewWorld from "../components/Icon/svg/NewWorld.svg";
 import Icon from "../components/Icon.astro";
 import ReactIcon from "../components/ReactIcon";
 import { getAllContentfulData } from "../services/contentful";
@@ -139,27 +138,24 @@ console.log(contentfulData);
             class="grid grid-cols-1 lg:grid-cols-5 gap-y-12 lg:gap-y-0 justify-items-center"
           >
             <div
-              class="w-[220px] h-[200px] flex flex-col justify-between px-6 py-4 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
+              class="w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
             >
-              <div class="min-h-[50px] mt-2">
+              <div class="mb-2">
                 <Icon name="ness" />
               </div>
-              <p class="text-sm font-medium">Healthcare SaaS</p>
               <div>
-                <ul class="list-disc list-inside text-xs text-[#585D68]">
+                <p class="text-sm">Healthcare SaaS</p>
+                <ul class="text-xs text-[#585D68] font-light">
                   <li>Product designer</li>
                   <li>Frontend dev</li>
                   <li>DevOps</li>
                 </ul>
               </div>
-              <div class="self-end">
-                <!-- <a href="https://github.com/andreszapataq" target="_blank"
-                  ><img
-                    class="cursor-pointer"
-                    src={NewWorld.src}
-                    alt="New World"
-                  /></a
-                > -->
+              <div class="flex items-center self-end cursor-pointer mt-4">
+                <p class="text-[11px] text-bleu-de-france font-medium mr-1">
+                  Visitar
+                </p>
+                <Icon name="arrow" />
               </div>
             </div>
             <div
@@ -201,13 +197,13 @@ console.log(contentfulData);
                 </ul>
               </div>
               <div class="self-end">
-                <a href="#"
+                <!-- <a href="#"
                   ><img
                     class="cursor-pointer"
                     src={NewWorld.src}
                     alt="New World"
                   /></a
-                >
+                > -->
               </div>
             </div>
             <div
@@ -225,13 +221,13 @@ console.log(contentfulData);
                 </ul>
               </div>
               <div class="self-end">
-                <a href="https://artan.com.co/" target="_blank"
+                <!-- <a href="https://artan.com.co/" target="_blank"
                   ><img
                     class="cursor-pointer"
                     src={NewWorld.src}
                     alt="New World"
                   /></a
-                >
+                > -->
               </div>
             </div>
             <div
@@ -249,13 +245,13 @@ console.log(contentfulData);
                 </ul>
               </div>
               <div class="self-end">
-                <a href="https://nabtaxservices.com/" target="_blank"
+                <!-- <a href="https://nabtaxservices.com/" target="_blank"
                   ><img
                     class="cursor-pointer"
                     src={NewWorld.src}
                     alt="New World"
                   /></a
-                >
+                > -->
               </div>
             </div>
           </div>
