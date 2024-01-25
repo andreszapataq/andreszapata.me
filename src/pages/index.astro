@@ -12,7 +12,12 @@ console.log(contentfulData);
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="favicon.svg" rel="icon" media="(prefers-color-scheme: light)" />
+    <link
+      href="favicon-dark.svg"
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>andreszapata.me - Welcome</title>
@@ -22,8 +27,8 @@ console.log(contentfulData);
       <div
         class="section-hero min-h-[390px] mx-4 my-6 lg:mx-64 lg:my-12 flex flex-col justify-between"
       >
-        <a href="https://andreszapata.me/">
-          <img src={AZLogo.src} alt="{az}" class="w-[180px] lg:w-[220px]" />
+        <a href="https://andreszapata.me/" class="w-[180px] lg:w-[220px]">
+          <img src={AZLogo.src} alt="{az}" />
         </a>
         <div class="flex flex-col items-center">
           <h1 class="text-[50px] font-medium">
