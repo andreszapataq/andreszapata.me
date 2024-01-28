@@ -3,6 +3,7 @@ import "@fontsource-variable/urbanist";
 import AZLogo from "../components/Icon/svg/az-logo.svg";
 import Icon from "../components/Icon.astro";
 import ReactIcon from "../components/ReactIcon";
+import Card from "../components/Card.astro";
 import { getAllContentfulData } from "../services/contentful";
 console.log("Before calling Contentful");
 const contentfulData = await getAllContentfulData();
@@ -142,150 +143,36 @@ console.log(contentfulData);
           <div
             class="grid grid-cols-1 lg:grid-cols-5 gap-y-12 lg:gap-y-0 justify-items-center"
           >
-            <div
-              class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
-            >
-              <div class="mb-2">
-                <Icon name="ness" />
-              </div>
-              <div>
-                <p class="text-sm">Healthcare SaaS</p>
-                <ul class="text-xs text-[#585D68] font-light">
-                  <li>Product designer</li>
-                  <li>Frontend dev</li>
-                  <li>DevOps</li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/andreszapataq"
-                target="_blank"
-                class="group flex items-center self-end cursor-pointer mt-4"
-              >
-                <p class="text-xs text-bleu-de-france font-medium mr-1">
-                  Explore
-                </p>
-                <div
-                  class="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <Icon name="arrow" />
-                </div>
-              </a>
-            </div>
-            <div
-              class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
-            >
-              <div class="mb-2">
-                <Icon name="vive" />
-              </div>
-              <div>
-                <p class="text-sm">Medical Devices</p>
-                <ul class="text-xs text-[#585D68] font-light">
-                  <li>COO</li>
-                  <li>Web dev</li>
-                  <li>Logo designer</li>
-                </ul>
-              </div>
-              <a
-                href="https://vivesolutions.co/"
-                target="_blank"
-                class="group flex items-center self-end cursor-pointer mt-4"
-              >
-                <p class="text-xs text-bleu-de-france font-medium mr-1">
-                  Explore
-                </p>
-                <div
-                  class="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <Icon name="arrow" />
-                </div>
-              </a>
-            </div>
-            <div
-              class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
-            >
-              <div class="mb-2">
-                <Icon name="zanto" />
-              </div>
-              <div>
-                <p class="text-sm">Clothing</p>
-                <ul class="text-xs text-[#585D68] font-light">
-                  <li>Founder</li>
-                  <li>Designer</li>
-                  <li>Logo designer</li>
-                </ul>
-              </div>
-              <a
-                href="https://andreszapata.me/"
-                class="group flex items-center self-end cursor-pointer mt-4"
-              >
-                <p class="text-xs text-bleu-de-france font-medium mr-1">
-                  Explore
-                </p>
-                <div
-                  class="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <Icon name="arrow" />
-                </div>
-              </a>
-            </div>
-            <div
-              class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
-            >
-              <div class="mb-2">
-                <Icon name="nab" />
-              </div>
-              <div>
-                <p class="text-sm">Accounting</p>
-                <ul class="text-xs text-[#585D68] font-light">
-                  <li>Web dev</li>
-                  <li>Logo designer</li>
-                  <li>Technical Support</li>
-                </ul>
-              </div>
-              <a
-                href="https://nabtaxservices.com/"
-                target="_blank"
-                class="group flex items-center self-end cursor-pointer mt-4"
-              >
-                <p class="text-xs text-bleu-de-france font-medium mr-1">
-                  Explore
-                </p>
-                <div
-                  class="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <Icon name="arrow" />
-                </div>
-              </a>
-            </div>
-            <div
-              class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
-            >
-              <div class="mb-2">
-                <Icon name="artan" />
-              </div>
-              <div>
-                <p class="text-sm">Woodwork</p>
-                <ul class="text-xs text-[#585D68] font-light">
-                  <li>Web dev</li>
-                  <li>WordPress</li>
-                  <li>Technical Support</li>
-                </ul>
-              </div>
-              <a
-                href="https://artan.com.co/"
-                target="_blank"
-                class="group flex items-center self-end cursor-pointer mt-4"
-              >
-                <p class="text-xs text-bleu-de-france font-medium mr-1">
-                  Explore
-                </p>
-                <div
-                  class="transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  <Icon name="arrow" />
-                </div>
-              </a>
-            </div>
+            <Card
+              url="https://github.com/andreszapataq"
+              icon="ness"
+              title="Healthcare SaaS"
+              items={["Product designer", "Frontend dev", "DevOps"]}
+            />
+            <Card
+              url="https://vivesolutions.co/"
+              icon="vive"
+              title="Medical Devices"
+              items={["COO", "Web dev", "Logo designer"]}
+            />
+            <Card
+              url="https://www.sic.gov.co/"
+              icon="zanto"
+              title="Clothing"
+              items={["Founder", "Designer", "Logo designer"]}
+            />
+            <Card
+              url="https://nabtaxservices.com/"
+              icon="nab"
+              title="Accounting"
+              items={["Web dev", "Logo designer", "Technical Support"]}
+            />
+            <Card
+              url="https://artan.com.co/"
+              icon="artan"
+              title="Woodwork"
+              items={["Web dev", "WordPress", "Technical Support"]}
+            />
           </div>
         </div>
       </div>

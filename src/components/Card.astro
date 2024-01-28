@@ -1,0 +1,27 @@
+---
+import "@fontsource-variable/urbanist";
+import Icon from "../components/Icon.astro";
+const { url, icon, title, items } = Astro.props;
+---
+
+<a href={url} target="_blank" class="group">
+  <div
+    class="w-[250px] lg:w-[220px] h-[210px] flex flex-col justify-end items-center p-6 bg-gradient-to-br from-white from-[58.85%] to-[#F8F8F8] shadow-[1px_1px_2px_1px_rgba(0,0,0,0.11)] rounded-2xl"
+  >
+    <div class="mb-2">
+      <Icon name={icon} />
+    </div>
+    <div>
+      <p class="text-sm">{title}</p>
+      <ul class="text-xs text-[#585D68] font-light">
+        {items.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div class="group flex items-center self-end mt-4">
+      <p class="text-xs text-bleu-de-france font-medium mr-1">Explore</p>
+      <div class="transition-transform duration-300 group-hover:translate-x-1">
+        <Icon name="arrow" />
+      </div>
+    </div>
+  </div>
+</a>
