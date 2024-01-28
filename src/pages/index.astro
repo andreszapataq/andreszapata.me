@@ -1,9 +1,9 @@
 ---
 import "@fontsource-variable/urbanist";
 import AZLogo from "../components/Icon/svg/az-logo.svg";
+import Card from "../components/Card.astro";
 import Icon from "../components/Icon.astro";
 import ReactIcon from "../components/ReactIcon";
-import Card from "../components/Card.astro";
 import { getAllContentfulData } from "../services/contentful";
 console.log("Before calling Contentful");
 const contentfulData = await getAllContentfulData();
@@ -165,13 +165,13 @@ console.log(contentfulData);
               url="https://nabtaxservices.com/"
               icon="nab"
               title="Accounting"
-              items={["Web dev", "Logo designer", "Technical Support"]}
+              items={["Web dev", "Logo designer", "Technical support"]}
             />
             <Card
               url="https://artan.com.co/"
               icon="artan"
-              title="Woodwork"
-              items={["Web dev", "WordPress", "Technical Support"]}
+              title="Woodworks"
+              items={["Web dev", "WordPress", "Technical support"]}
             />
           </div>
         </div>
