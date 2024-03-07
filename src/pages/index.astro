@@ -24,14 +24,14 @@ console.log(contentfulData);
     <title>andreszapata.me - Welcome</title>
   </head>
   <body>
-    <div class="main flex flex-col gap-y-16 lg:gap-y-16">
+    <div class="main flex flex-col">
       <div
-        class="section-hero min-h-[390px] mx-4 my-6 lg:mx-64 lg:my-12 flex flex-col justify-between"
+        class="section-hero min-h-[650px] mx-4 my-6 lg:mx-64 lg:my-12 grid grid-rows-[42px_1fr]"
       >
         <a href="https://andreszapata.me/" class="w-[180px] lg:w-[220px]">
           <img src={AZLogo.src} alt="{az}" />
         </a>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col justify-center items-center">
           <h1 class="text-[50px] font-medium">
             {contentfulData.information[0].title}
           </h1>
@@ -52,7 +52,7 @@ console.log(contentfulData);
       <div
         class="section-skills min-h-[550px] flex flex-col justify-center bg-gradient-to-t from-slate-100 to-slate-50"
       >
-        <div class="mx-4 lg:mx-40 2xl:mx-64 my-11 lg:my-0">
+        <div class="mx-4 my-11 lg:mx-40 2xl:mx-64 lg:my-0">
           <h2 class="text-4xl text-navy-blue font-semibold mb-12">Skills</h2>
           <div class="flex justify-center">
             <div
@@ -137,9 +137,11 @@ console.log(contentfulData);
           </div>
         </div>
       </div>
-      <div class="section-work mx-4 my-6 lg:mx-28 2xl:mx-64 lg:my-12">
-        <h2 class="text-4xl text-navy-blue font-semibold">Work and products</h2>
-        <div class="min-h-[350px] flex flex-col justify-center my-12 lg:my-0">
+      <div class="section-work min-h-[650px] flex flex-col justify-center">
+        <div class="mx-4 my-11 lg:mx-28 2xl:mx-64 lg:my-12">
+          <h2 class="text-4xl text-navy-blue font-semibold mb-12">
+            Work and products
+          </h2>
           <div
             class="grid grid-cols-1 lg:grid-cols-5 gap-y-12 lg:gap-y-0 justify-items-center"
           >
@@ -179,7 +181,7 @@ console.log(contentfulData);
     </div>
     <div
       id="section-contact"
-      class="section-contact px-4 py-8 lg:p-12 bg-[#292929]"
+      class="section-contact px-4 py-11 lg:p-12 bg-[#292929]"
     >
       <h2 class="text-4xl text-white font-semibold">Contact us</h2>
       <div
